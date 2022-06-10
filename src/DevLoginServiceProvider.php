@@ -7,7 +7,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use Naythukhant\LaravelDevLogin\Http\Components\DevLoginComponent;
 
-class LaravelDevLoginServiceProvider extends ServiceProvider
+class DevLoginServiceProvider extends ServiceProvider
 {
     public function boot()
     {

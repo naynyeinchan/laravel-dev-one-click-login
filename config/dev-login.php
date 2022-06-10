@@ -2,7 +2,8 @@
 
 
 
-/*all of the config are not getting from Env helper since this application should not be messing up the env file*/
+/*all the config are not getting from Env helper since this application should not be messing up the env file*/
+
 
 use Naythukhant\LaravelDevLogin\Http\Controllers\DevLoginController;
 

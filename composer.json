@@ -5,7 +5,7 @@
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Naythukhant\\LaravelDevLogin\\": "src/"
+            "NayThuKhant\\LaravelDevLogin\\": "src/"
         }
     },
     "authors":[
@@ -18,7 +18,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Naythukhant\\LaravelDevLogin\\DevLoginServiceProvider"
+                "NayThuKhant\\LaravelDevLogin\\DevLoginServiceProvider"
             ]
         }
     }
