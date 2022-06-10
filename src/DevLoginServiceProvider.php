@@ -18,7 +18,7 @@ class DevLoginServiceProvider extends ServiceProvider
         if ($this->app->environment(config('dev-login.allowed_environments'))) {
             $this->publishes([
                 __DIR__ . '/../config/dev-login.php' => config_path('dev-login.php'),
-            ], 'dev-login-config');
+            ], 'dev-login');
 
             $this->loadViewsFrom(__DIR__ . '/../resources/views', 'dev-login');
 
