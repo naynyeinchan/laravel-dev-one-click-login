@@ -1,10 +1,10 @@
 <?php
 
-namespace Naythukhant\LaravelDevLogin\Http\Controllers;
+namespace NayThuKhant\LaravelDevLogin\Http\Controllers;
 
 use App\Http\Controllers\Controller;
-use Naythukhant\LaravelDevLogin\Exceptions\InvalidAuthModel;
-use Naythukhant\LaravelDevLogin\Http\Requests\DevLoginRequest;
+use NayThuKhant\LaravelDevLogin\Exceptions\InvalidAuthModel;
+use NayThuKhant\LaravelDevLogin\Http\Requests\DevLoginRequest;
 
 class DevLoginController extends Controller
 {

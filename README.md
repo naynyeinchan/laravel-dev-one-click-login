@@ -58,7 +58,7 @@ Here is how to override the package.
 ```php
 <?php
 
-use Naythukhant\LaravelDevLogin\Http\Controllers\DevLoginController;
+use NayThuKhant\LaravelDevLogin\Http\Controllers\DevLoginController;
 
 /*all the config are not getting from Env helper since this application should not be messing up the env file*/
 

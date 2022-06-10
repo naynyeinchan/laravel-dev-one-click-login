@@ -1,6 +1,6 @@
 <?php
 
-namespace Naythukhant\LaravelDevLogin\Http\Requests;
+namespace NayThuKhant\LaravelDevLogin\Http\Requests;
 
 use Illuminate\Foundation\Http\FormRequest;
 

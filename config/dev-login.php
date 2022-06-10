@@ -5,7 +5,7 @@
 /*all the config are not getting from Env helper since this application should not be messing up the env file*/
 
 
-use Naythukhant\LaravelDevLogin\Http\Controllers\DevLoginController;
+use NayThuKhant\LaravelDevLogin\Http\Controllers\DevLoginController;
 
 return [
     /*default route name to be redirected after logging in*/

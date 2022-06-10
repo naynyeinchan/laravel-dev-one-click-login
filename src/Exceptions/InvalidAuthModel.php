@@ -1,6 +1,6 @@
 <?php
 
-namespace Naythukhant\LaravelDevLogin\Exceptions;
+namespace NayThuKhant\LaravelDevLogin\Exceptions;
 
 class InvalidAuthModel extends \Exception
 {

@@ -1,11 +1,11 @@
 <?php
 
-namespace Naythukhant\LaravelDevLogin;
+namespace NayThuKhant\LaravelDevLogin;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
-use Naythukhant\LaravelDevLogin\Http\Components\DevLoginComponent;
+use NayThuKhant\LaravelDevLogin\Http\Components\DevLoginComponent;
 
 class DevLoginServiceProvider extends ServiceProvider
 {

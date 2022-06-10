@@ -1,6 +1,6 @@
 <?php
 
-namespace Naythukhant\LaravelDevLogin\Http\Components;
+namespace NayThuKhant\LaravelDevLogin\Http\Components;
 
 use Illuminate\View\Component;
 
