@@ -1,6 +1,6 @@
 {
     "name": "naythukhant/laravel-dev-login",
-    "description": "A laravel package to login in local environment with one click",
+    "description": "A laravel package to login during development with one click",
     "type": "library",
     "license": "MIT",
     "autoload": {
