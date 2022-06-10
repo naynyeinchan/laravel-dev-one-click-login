@@ -1,0 +1,25 @@
+{
+    "name": "naythukhant/laravel-dev-login",
+    "description": "A laravel package to login in local environment with one click",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "Naythukhant\\LaravelDevLogin\\": "src/"
+        }
+    },
+    "authors":[
+        {
+            "name": "Nay Thu Khant"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Naythukhant\\LaravelDevLogin\\DevLoginServiceProvider"
+            ]
+        }
+    }
+}
