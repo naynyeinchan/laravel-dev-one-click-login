@@ -3,6 +3,7 @@
 namespace NayThuKhant\LaravelDevLogin\Http\Controllers;
 
 use App\Http\Controllers\Controller;
+use NayThuKhant\LaravelDevLogin\Exceptions\AuthenticatableNotFound;
 use NayThuKhant\LaravelDevLogin\Exceptions\InvalidAuthModel;
 use NayThuKhant\LaravelDevLogin\Http\Requests\DevLoginRequest;
 
@@ -20,7 +21,13 @@ class DevLoginController extends Controller
         $authModel = $this->getAuthenticatableClass($request->guard);
         $identifierColumn = $request->identifier_column;
 
-        return $request->identifier ? $authModel::query()->where($identifierColumn, $request->identifier)->firstOrFail() : $authModel::firstOrFail();
+        /*If the dev provided identifier, the package will try to find it in the model of the given guard
+        If not, the package will try to find very first row in the model of the given guard
+        If none of them can't retrieve a record, the package will throw an exception
+        */
+        $authenticatable = $request->identifier ? $authModel::query()->where($identifierColumn, $request->identifier)->first() : $authModel::first();
+
+        return $authenticatable ?? throw AuthenticatableNotFound::make();
     }
 
     private function getAuthenticatableClass($guard)

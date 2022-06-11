@@ -25,6 +25,6 @@ return [
     /*this middleware will be applied for the dev login route*/
     "middleware" => 'web',
 
-    /*this will define when to include things provided by this package to be included*/
+    /*this will define when to include things provided by this package*/
     "allowed_environments" => ['local']
 ];
