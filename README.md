@@ -55,7 +55,7 @@ default if no attribute is passed.
 You can install the package via composer.
 
 ```bash
-composer require naynyeinchan/laravel-dev-login
+composer require naynyeinchan/laravel-dev-one-click-login
 ```
 
 Optionally, you can publish the config file with:
