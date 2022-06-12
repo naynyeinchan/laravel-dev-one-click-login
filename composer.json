@@ -1,5 +1,5 @@
 {
-    "name": "naythukhant/laravel-dev-login",
+    "name": "naynyeinchan/laravel-dev-one-click-login",
     "description": "A laravel package to login during development with one click",
     "type": "library",
     "license": "MIT",
@@ -12,6 +12,10 @@
         {
             "name": "Nay Thu Khant",
             "email": "naythukhant644@gmail.com"
+        },
+        {
+            "name": "Nay Nyein Chan",
+            "email": "naychan700@gmail.com"
         }
     ],
     "minimum-stability": "dev",
