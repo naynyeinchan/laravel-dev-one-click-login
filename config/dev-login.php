@@ -24,6 +24,12 @@ return [
 
     /*this middleware will be applied for the dev login route*/
     "middleware" => 'web',
+    
+    /*this is login view where package will be use*/
+    "view_path" => 'auth.login',
+
+    /*this will define variable name to be looped*/
+    "var_name" => 'foo',
 
     /*this will define when to include things provided by this package*/
     "allowed_environments" => ['local']
