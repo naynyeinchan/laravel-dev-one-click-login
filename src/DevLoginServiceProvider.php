@@ -25,6 +25,17 @@ class DevLoginServiceProvider extends ServiceProvider
             Blade::component('dev-login', DevLoginComponent::class);
 
             $this->registerRoutes();
+            
+            $guard = config('auth.defaults.guard') ?? config('dev-login.guard');
+            $provider = config("auth.guards.{$guard}.provider");
+            $model = config("auth.providers.{$provider}.model") ?? config('dev-login.auth_model');
+            $foo = $model::all()->unique("role");
+            $view = config('dev-login.view_path');
+
+            view()->composer($view, function ($view) use ($foo) {
+                $var_name = config('dev-login.var_name');
+                $view->with("{$var_name}", $foo);
+            });
         }
     }
 
