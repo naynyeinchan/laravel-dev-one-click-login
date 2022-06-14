@@ -31,6 +31,9 @@ return [
     /*this will define variable name to be looped*/
     "var_name" => 'foo',
 
+    /*this will define which column to be use for loop*/
+    "column_name" => 'role',
+
     /*this will define when to include things provided by this package*/
     "allowed_environments" => ['local']
 ];
