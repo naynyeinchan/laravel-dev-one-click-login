@@ -6,6 +6,7 @@ development stage and that may make developer himself to be annoyed.
 
 <h4 style="color: #f70d1a">!!! Important this package is only available for development purpose.Please do not use it in production.Delete component
 when you are ready to deploy your app. !!!</h4>
+<br>
 
 
 This package can help you to overcome those problems by providing the following component.
